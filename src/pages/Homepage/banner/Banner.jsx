@@ -3,7 +3,7 @@ import pngwing from "../../../assets/pngwing 1.png"
 
 const Banner = () => {
   return (
-    <div className="hero bg-base-200 min-h-[70vh] container mx-auto rounded-2xl">
+    <div className="hero bg-base-200 min-h-[70vh] container mx-auto rounded-2xl mt-4">
       <div className="hero-content flex-col lg:flex-row-reverse w-full  gap-20">
         <img
           src={pngwing}

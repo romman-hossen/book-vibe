@@ -40,7 +40,8 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 container mx-auto py-5">
+    <div className="py-4 shadow sticky z-50">
+    <div className="navbar bg-base-100 container mx-auto ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -123,6 +124,7 @@ const Navbar = () => {
         <a className="btn btn-accent text-white">Sign Up</a>
         </div>
       </div>
+    </div>
     </div>
   );
 };
