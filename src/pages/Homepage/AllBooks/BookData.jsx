@@ -11,8 +11,8 @@ const BookData = ({ books }) => {
       </figure>
       <div className="space-y-5">
         <div className="flex gap-2 pt-6">
-        {books.tags.map((tag) => (
-            <div bookItem = {tag} className="badge bg-green-50 text-green-500 font-medium ">
+        {books.tags.map((tag,ind) => (
+            <div tag = {tag} key={ind} className="badge bg-green-50 text-green-500 font-medium ">
             {/* <div className="badge badge-outline">Fashion</div>
             <div className="badge badge-outline">Products</div> */}
              {tag}

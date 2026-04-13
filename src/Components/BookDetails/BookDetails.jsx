@@ -4,9 +4,9 @@ import { BooksContext } from "../Context/BookContext";
 
 const BookDetails = () => {
 
-  const {handleMarkAsRead} = useContext(BooksContext)
+  const {handleMarkAsRead,handleAddToWishList} = useContext(BooksContext)
   const { bookId: paramBookId } = useParams();
-  // console.log(bookId,"params")
+  
   const bookDetails = useLoaderData();
   // console.log(bookDetails);
   const idDetails = bookDetails.find(
@@ -79,7 +79,7 @@ const BookDetails = () => {
         </div>
         <div className="flex gap-4  ">
             <button onClick={() => handleMarkAsRead(idDetails)} className="btn btn-outline">Mark as Read</button>
-            <button className="btn  btn-accent">Add to Wishlist</button>
+            <button onClick={() => handleAddToWishList(idDetails)} className="btn  btn-accent">Add to Wishlist</button>
         </div>        
       </div>
     </div>
